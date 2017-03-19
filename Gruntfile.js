@@ -205,9 +205,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'src/images',
-						src: ['img/*.{png,jpg,gif,svg}'],
-						dest: 'dist'
+						cwd: 'src/images/img/',
+						src: ['**/*.{png,jpg,gif,svg}'],
+						dest: 'dist/img/'
 					}
 				]
     		}
@@ -231,7 +231,8 @@ module.exports = function(grunt) {
 		    },
 		    scripts: {
 		        files: [
-		            'src/scripts/*.js'
+		            'src/scripts/*.js',
+		            'src/scripts/**/*.js'
 		        ],
 		        tasks: [
 		            'newer:jshint',
@@ -240,7 +241,8 @@ module.exports = function(grunt) {
 		    },
 		    styles: {
 		        files: [
-		            'src/styles/sass/*.scss'
+		            'src/styles/sass/*.scss',
+		            'src/styles/sass/**/*.scss'
 		        ],
 		        tasks: [
 		            'sass:dev'
