@@ -149,6 +149,7 @@ module.exports = function(grunt) {
     			files:{
     				src:[
     					'dist/css/app.min.css',
+    					'dist/css/app.css',
     					'dist/js/app.js',
     					'dist/js/app.min.js'
     				]
@@ -163,6 +164,12 @@ module.exports = function(grunt) {
 						flatten: true,
 						src: 'src/scripts/app.js',
 						dest: 'dist/js'
+    				},
+    				{
+    					expand: true,
+						flatten: true,
+						src: 'src/styles/css/app.css',
+						dest: 'dist/css'
     				}
     			]
     		},
@@ -302,22 +309,25 @@ module.exports = function(grunt) {
 		    // Production tasks
 		    prodFirst: [
 		        'clean',
-		        'jshint',
-		        'sass:prod'
+		        'jshint'	        
 		    ],
 		    prodSecond: [
-		        'uglify:prod',
-		        'autoprefixer'
+				'sass:prod',
+		        'uglify:prod'	        
 		    ],
 		    prodThird: [
-		        'cssmin',
-		        'copy:prod'
+				'autoprefixer'
 		    ],
 		    prodFourth: [
-		    	'usebanner',
+				'cssmin',
 		    	'includereplace'
 		    ],
-
+		    prodFifth: [
+				'copy:prod'
+		    ],
+		    prodSixth: [
+				'usebanner'
+		    ],
 		    // Image tasks
 		    imgFirst: [
 		        'imagemin'
@@ -354,6 +364,8 @@ module.exports = function(grunt) {
   		'concurrent:prodSecond',
   		'concurrent:prodThird',
   		'concurrent:prodFourth',
+  		'concurrent:prodFifth',
+  		'concurrent:prodSixth',
   		'concurrent:imgFirst'
 	]);
 };
