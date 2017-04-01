@@ -1,0 +1,10 @@
+/*!
+ * win-timer
+ * @author: avakandy
+ * @version: 1.0.0
+ * Copyright 2017.
+ */
+
+.b-container { max-width: 980px; padding: 0 10px; margin: 0 auto; box-sizing: border-box; }
+
+.b-container:after { content: ''; display: table; clear: both; }

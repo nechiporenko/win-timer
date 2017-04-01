@@ -1,3 +1,10 @@
+/*!
+ * win-timer
+ * @author: avakandy
+ * @version: 1.0.0
+ * Copyright 2017.
+ */
+
 (function(){
     'use strict';
 

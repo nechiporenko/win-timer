@@ -1,8 +1,8 @@
 {
-  "name": "my-project",
-  "version": "0.0.1",
-  "description": "My project",
-  "author": "nechiporenko",
+  "name": "win-timer",
+  "version": "1.0.0",
+  "description": "Javascript random winner timer",
+  "author": "avakandy",
   "devDependencies": {
     "connect-livereload": "^0.6.0",
     "grunt": "^1.0.1",

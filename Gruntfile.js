@@ -176,10 +176,10 @@ module.exports = function(grunt) {
     		init:{
     		    files: [
                     {
-                        expand: false,
-                        flatten: false,
-                        src: 'bower_components/normalize-css/normalize.css',
-                        dest: 'src/styles/sass/_normalize.scss'
+                        //expand: false,
+                        //flatten: false,
+                        //src: 'bower_components/normalize-css/normalize.css',
+                        //dest: 'src/styles/sass/_normalize.scss'
                     },
     				{
     					//expand: true,

@@ -1,9 +1,8 @@
-# sass-frontend-boilerplate
+# win-timer
+Демо: http://nsv.in.ua/win-timer
 
-Grunt Front End Boilerplate
+JS-функция, которая сохраняет в localStorage числовое значение, динамически увеличевает его на случайную величину в случайном временном интервале, и отображает его на странице.
 
-Install:
-1) bower install
-2) npm install
-3) grunt
-4) grunt dev
+Без jQuery-зависимостей.
+
+Более подробные комментарии и пример вызова - см. dist/app.js (на странице подключен минифицированный файл)
